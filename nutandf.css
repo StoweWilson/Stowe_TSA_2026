@@ -1,0 +1,160 @@
+html{
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background: white;
+}
+
+
+.start{
+    position: relative;
+    height: 90vh;
+    background: #ffffff;
+    
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(22, 61, 99, 1) 100%, rgba(32, 73, 115, 1) 50%);
+    overflow: hidden;
+}
+
+.image-layer{
+    position: absolute;
+    inset: 0;
+    background-image: url("c-j-1GHqOftzYo0-unsplash.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    border-radius: 20px;
+    margin-top: 20px;
+    filter: blur(1px) saturate(0.9);
+    
+    mask-image: linear-gradient(
+        to bottom,
+        rgb(255, 255, 255),
+        rgba(0,0,0,0)
+    );
+}
+
+.overlay{
+    position: absolute;
+    inset: 3;
+    margin-top: 0px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.content{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    padding-top: 180px;
+}
+
+.content h1{
+    font-size: 3.5rem;
+    line-height: 1.15;
+}
+
+.content p{
+    color: #aaa;
+    margin-top: 20px;
+}
+
+.Overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+.Overview h1{
+   color: black;
+   font-size: 3.5rem;
+   font-weight: 700;
+}
+
+.Overview p{
+    color: black;
+    font-size: 2 rem;
+
+}
+
+.info{
+    padding: 72px 24px;
+}
+
+.info-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    gap: 56px;
+    align-items: start;
+}
+
+.info-text h2{
+    font-size: 2.5rem;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin: 0 0 10px;
+}
+
+.info-subheader{
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin: 0 0 22px;
+}
+
+
+.info-body p{
+    margin:  0 0 14px;
+    color:  #222;
+    max-width: 62ch;
+}
+
+.info-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+    box-shadow: 0 18px 60px rgba(0,0,0,0.08);
+}
+
+.image-row{
+    height: 400px;
+    width: 100%;
+    background-image: url("/c-j-1GHqOftzYo0-unsplash.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.text-section{
+    background-color: #204973;
+    padding: 80px 24px;
+    text-align: center;
+}
+
+.text-section h2{ 
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+
+.text-section h1{
+    font-size: clamp(32px,4vw,48px);
+    line-height: 1.1;
+    color: #ffffff;
+    max-width: 900px;
+    margin: 0 auto;
+}
