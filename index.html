@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<nav class="navbar">
+<div class="navbar_inner">
+        <div class="navbar_left">
+        <a class="navbar_logo" href="./">
+            <span class="logo"></span>
+        </a>
+    </div>
+    <div class="nav_links" >
+        <div class="dropdown">
+            <button class="link_dropdown">Resources
+            <span class="chev">▾</span>
+            </button>
+
+            <div class="dropdown_menu">
+                <a class="link" href="">Housing</a>
+                <a class="link" href="">Healthcare</a>
+                <a class="link" href="">Transportantion</a>
+            </div>
+        </div>
+    </div>
+    <a class="link" href="">Events</a>
+    <a class="link" href="">Get Involved</a>
+<div class="search">
+    <form id="sarchform" class="search2" method="get" action="source.html" >
+    <input class="search2" id="test" type="text" name="search" size="10" maxlength="255">
+    <button type="submit"></button>
+    </form>
+</div>
+</div>
+</nav>
+<body>
+    <section class="hero">
+        <div class="hero_overlay">
+            <h1>A Community like no other</h1>
+            <a href="">Get Involved</a>
+        </div>
+        <div class="hero_image">
+            <img src="Images/City image.jpg" />
+            </div>
+        </div>
+    </section>
+
+    <div class="Card_container">
+        <div class="Card">
+            <img src="Images/nathan-dumlao-rWcza92CapI-unsplash.jpg" alt="sweatpants">
+            <a>Nutrition & food</a>
+        </div>
+        <div class="Card">
+            <img src="Images/tom-rumble-7lvzopTxjOU-unsplash.jpg" alt="sweatpants">
+            <a>Housing & Shelter</a>
+        </div>
+        <div class="Card">
+            <img src="Images/nappy-6LV3V1gLrP8-unsplash.jpg" alt="sweatpants">
+            <a>Healthcare & Mental Health</a>
+        </div>
+        
+    </div>
+        
+    <div class="Stats">
+        <div class="statsGrid">
+            <div class="statsCard">
+                <div class="statNum">89%</div>
+                <p class="statsText">blah blah</p>
+            </div>
+
+            <div class="statsCard">
+                <div class="statNum">89%</div>
+                <p class="statsText">blah blah</p>
+            </div>
+
+            <div class="statsCard">
+                <div class="statNum">89%</div>
+                <p class="statsText">blah blah</p>
+            </div>
+
+            <div class="statsCard">
+                <div class="statNum">89%</div>
+                <p class="statsText">blah blah</p>
+            </div>
+        </div>
+    </div>
+
+       
+</div>
+    
+</body>
+</html>
+<script type="text/javascript">
+document.getElementById('searchform').onsubmit = function() {
+    window.location = 'http://www.google.com/search?q=site:yourdomainname ' + document.getElementById('test').value;
+    return false;
+}
+</script>
