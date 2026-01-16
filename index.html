@@ -12,7 +12,7 @@
 <div class="navbar_inner">
         <div class="navbar_left">
         <a class="navbar_logo" href="./">
-            <span class="logo"></span>
+           <img src="/Images/Boston_Commons_logo_design-removebg-preview.png" alt="Boston Commons logo">
         </a>
     </div>
     <div class="nav_links" >
@@ -31,9 +31,11 @@
     <a class="link" href="">Events</a>
     <a class="link" href="">Get Involved</a>
 <div class="search">
-    <form id="sarchform" class="search2" method="get" action="source.html" >
-    <input class="search2" id="test" type="text" name="search" size="10" maxlength="255">
-    <button type="submit"></button>
+    <form id="searchform" class="searchForm" method="get" action="source.html">
+        <input class="searchInput" id="test" type="text" name="search" placeholder="Search Boston Commons" maxlength="255" />
+        <button type="submit" class="searchButton" aria-label="Search">
+            <img src="./Images/pngtree-vector-search-icon-png-image_320926-removebg-preview.png" alt="">
+        </button>
     </form>
 </div>
 </div>
@@ -51,9 +53,9 @@
     </section>
 
     <div class="Card_container">
-        <div class="Card">
-            <img src="Images/nathan-dumlao-rWcza92CapI-unsplash.jpg" alt="sweatpants">
-            <a>Nutrition & food</a>
+        <div class="Card" href="/Nutandf.html">
+            <img src="Images/nathan-dumlao-rWcza92CapI-unsplash.jpg" alt="sweatpants" href="/Nutandf.html">
+            <a href="/Nutandf.html">Nutrition & food</a>
         </div>
         <div class="Card">
             <img src="Images/tom-rumble-7lvzopTxjOU-unsplash.jpg" alt="sweatpants">
@@ -69,35 +71,41 @@
     <div class="Stats">
         <div class="statsGrid">
             <div class="statsCard">
-                <a class="statNum">89%</a>
-                <p class="statsText">blah blah</p>
+                <a class="statNum">1#</a>
+                <p class="statsText">city in the world for higher education (students per capita)</p>
             </div>
 
             <div class="statsCard">
-                <a class="statNum">89%</a>
-                <p class="statsText">blah blah</p>
+                <a class="statNum">1630</a>
+                <p class="statsText">One of America’s Oldest Cities</p>
             </div>
 
             <div class="statsCard">
-                <a class="statNum">89%</a>
-                <p class="statsText">blah blah</p>
+                <a class="statNum">Top 10</a>
+                <p class="statsText">Most Walkable U.S. Cities</p>
             </div>
 
             <div class="statsCard">
-                <a class="statNum">89%</a>
-                <p class="statsText">blah blah</p>
+                <a class="statNum">Top 3%</a>
+                <p class="statsText">Global Innovation Hub</p>
             </div>
         </div>
     </div>
 
        
-</div>
+<footer>
+        <a href="index.html">Boston Commons</a>
+        <a href="">Nutrition & food</a>
+        <a href="story.html">Housing & Shelter</a>
+        <a href="reser.html">Healthcare & Mental Health</a>
+        <a href="ref.html">Sources</a>
+</footer>
     
 </body>
 </html>
 <script type="text/javascript">
 document.getElementById('searchform').onsubmit = function() {
-    window.location = 'http://www.google.com/search?q=site:yourdomainname ' + document.getElementById('test').value;
+    window.location = 'http://www.google.com/search?q=site:https://stowe-tsa-2026.pages.dev/ ' + document.getElementById('test').value;
     return false;
 }
 </script>

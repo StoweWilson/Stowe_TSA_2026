@@ -1,11 +1,66 @@
 html{
     background-color:  white;
+    overflow-x: hidden;
     
 }
 
 body{
     margin: 0;
+    padding: 0;
 }
+
+.searchForm{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.searchInput{
+    height: 40px;
+    padding: 0 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,0.15);
+    font-size: 14px;
+    outline: none;
+    background: #fff;
+    transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.searchInput::placeholder{
+    color: rgba(0,0,0,0.45);
+}
+
+.searchInput:focus{
+    border-color: #204973;
+    box-shadow: 0 0 0 3px rgba(32,73,115,0.15);
+}
+
+.searchButton{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #204973;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 150ms ease, transform 120ms ease, box-shadow 120ms ease;
+}
+
+.searchButton:hover{
+    background: #163d63;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.searchButton:active{
+    transform: translateY(0);
+    box-shadow: none;
+}
+
 
 
 .navbar{
@@ -17,14 +72,18 @@ body{
     border-bottom-right-radius: 24px;
     margin: 0;
     z-index: 1;
+    gap: 20px;
 }
 
 .navbar_inner{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    padding: 14px 18px;
+    padding: 14px 0px;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .navbar, .navbar_inner{
@@ -34,7 +93,7 @@ body{
 .navbar_left{
     display: flex;
     align-items: center;
-    gap: 18px;
+   
 }
 
 .navbar_logo{
@@ -44,6 +103,14 @@ body{
     transform: scale(.7);
     transform-origin: left center;
 }
+
+.navbar_logo img{
+    min-width: 55px;
+    max-width: 3vw;
+    height: auto;
+    
+}
+
 
 .logo{
     width: 44px;
@@ -78,6 +145,12 @@ body{
     display: inline-flex;
     align-items: center;
     gap: 6px;
+}
+
+.link, .link_dropdown{
+    padding: 10px 12px;
+    border-radius: 12px;
+    white-space: nowrap;
 }
 
 .dropdown{
@@ -126,15 +199,30 @@ body{
 .navbar_right{
     display: flex;
     align-items: center;
-    gap: 12px;
+    
+}
+
+.search{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.search img{
+    width: 16px;
+    height: 16px;
+    display: block;
 }
 
 .hero{
     display: flex;
     align-items: center;
+    justify-content: center;
     min-height: 70vh;
     height: 0;
-   
+    width: 100%;
+ 
 }
 
 .hero_overlay{
@@ -144,7 +232,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px;
+    padding: 20px;
+   
   
 }
 .hero h1{
@@ -171,7 +260,7 @@ body{
     position: absolute;
     overflow: hidden;
     height: 70vh;
-    padding: 20px;
+    width: 98%;
     
    
     
@@ -194,7 +283,7 @@ body{
     gap: 16px;
     padding: 16px;
     margin: 0 auto;
-    max-width: 1100px;
+   
 }
 
 .Card{
@@ -249,6 +338,8 @@ body{
 .Stats{
     padding: 24px;
     background: white;
+     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-weight: 700;
     
 }
 
@@ -256,7 +347,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
-    max-width: 1100px;
+    
     margin: 0 auto;
     
 }
@@ -275,17 +366,55 @@ body{
     line-height: 1;
     color:white;
     letter-spacing: -0.03em;
-    margin-bottom: 18px;
+    margin-bottom: 30px;
 }
 
 .statsText{
     margin: 0;
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 1.45;
     color:white;
+    padding: 10px;
 
 }
 
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #163d63;
+    color: #f5f3ec;
+    height: 5vh;
+}
+
+footer a{
+    color: #f5f3ec;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-weight: 700;
+    margin: 10px;
+    text-decoration: none;
+
+}
+
+
+@media (max-width: 720px) {
+    .nav_links{
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+    
+    .navbar_inner{
+        justify-content: flex-start;
+    }
+
+   
+
+    
+}
 
 
 @media ( min-width: 640px){
@@ -309,6 +438,7 @@ body{
 @media ( min-width: 1024px){
     .hero{
       grid-template-columns: 1fr;  
+      width: 100%;
     }
     .hero_image{
         order:-1;
@@ -326,5 +456,16 @@ body{
 
     .Card a{
         font-size: 19px;
+    }
+}
+
+
+
+@media (max-width: 720px){
+    .searchForm{
+        width: 100%;
+    }
+    .searchInput{
+        flex: 1;
     }
 }
