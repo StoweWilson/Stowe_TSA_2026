@@ -1,5 +1,5 @@
 html{
-    font-family: "Inter", sans-serif;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
 body{
@@ -34,7 +34,7 @@ body{
 .image-layer{
     position: absolute;
     inset: 0;
-    background-image: url("c-j-1GHqOftzYo0-unsplash.png");
+    background-image: url("./Images/nathan-dumlao-bRdRUUtbxO0-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,9 +90,10 @@ body{
     justify-content: center;
     align-items: center;
     gap: 5px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     line-height: 1.1;
+    padding:25px;
 }
 
 .Overview h1{
@@ -103,14 +104,22 @@ body{
 
 .Overview p{
     color: black;
-    font-size: 2 rem;
+    font-size: 2rem;
 
 }
 
 .info{
-    padding: 72px 24px;
+    padding: 40px ;
+    
 }
-
+.info-text{
+    background-color: #204973;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 18px 55px rgba(0, 0, 0, 0.08);
+    color: white;
+    
+}
 .info-inner{
     max-width: 1120px;
     margin: 0 auto;
@@ -127,6 +136,15 @@ body{
     margin: 0 0 10px;
 }
 
+.info-text h2::after{
+    display: block;
+    width: 48px;
+    height: 4px;
+    background: #204973;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
 .info-subheader{
     font-size: 18px;
     font-weight: 600;
@@ -137,8 +155,10 @@ body{
 
 .info-body p{
     margin:  0 0 14px;
-    color:  #222;
+    color:  white;
     max-width: 62ch;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .info-image img{
@@ -152,7 +172,7 @@ body{
 .image-row{
     height: 400px;
     width: 100%;
-    background-image: url("/c-j-1GHqOftzYo0-unsplash.png");
+    background-image: url("./Images/ella-olsson-KPDbRyFOTnE-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
