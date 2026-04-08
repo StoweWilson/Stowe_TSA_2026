@@ -33,12 +33,21 @@
     <a class="link" href="">Events</a>
     <a class="link" href="">Get Involved</a>
 <div class="search">
-    <form id="searchform" class="searchForm" method="get" action="source.html">
-        <input class="searchInput" id="test" type="text" name="search" placeholder="Search Boston Commons" maxlength="255" />
+    <form id="searchform" class="searchForm" autocomplete="off">
+        <input
+            class="searchInput"
+            id="test"
+            type="text"
+            name="search"
+            placeholder="Search Boston Commons"
+            maxlength="255"
+        />
         <button type="submit" class="searchButton" aria-label="Search">
-            <img src="./Images/pngtree-vector-search-icon-png-image_320926-removebg-preview.png" alt="">
+            <img src="./Images/pngtree-vector-search-icon-png-image_320926-removebg-preview.png" alt="Search icon">
         </button>
     </form>
+
+    <div id="autocomplete-list" class="autocomplete-items"></div>
 </div>
 </div>
 </nav>
@@ -123,5 +132,6 @@ General Support & Referrals: Call Mass 2‑1‑1
 
 </h1>
     </section>
+    <script src="/search.js" defer></script>
 </body>
 </html>

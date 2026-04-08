@@ -32,12 +32,21 @@
     <a class="link" href="">Events</a>
     <a class="link" href="">Get Involved</a>
 <div class="search">
-    <form id="searchform" class="searchForm" method="get" action="source.html">
-        <input class="searchInput" id="test" type="text" name="search" placeholder="Search Boston Commons" maxlength="255" />
+    <form id="searchform" class="searchForm" autocomplete="off">
+        <input
+            class="searchInput"
+            id="test"
+            type="text"
+            name="search"
+            placeholder="Search Boston Commons"
+            maxlength="255"
+        />
         <button type="submit" class="searchButton" aria-label="Search">
-            <img src="./Images/pngtree-vector-search-icon-png-image_320926-removebg-preview.png" alt="">
+            <img src="./Images/pngtree-vector-search-icon-png-image_320926-removebg-preview.png" alt="Search icon">
         </button>
     </form>
+
+    <div id="autocomplete-list" class="autocomplete-items"></div>
 </div>
 </div>
 </nav>
@@ -101,12 +110,8 @@
         <a href="reser.html">Healthcare & Mental Health</a>
         <a href="ref.html">Sources</a>
 </footer>
-    
+
+<script src="/search.js" defer></script>
+
 </body>
 </html>
-<script type="text/javascript">
-document.getElementById('searchform').onsubmit = function() {
-    window.location = 'https://stowe-tsa-2026.pages.dev/ ' + document.getElementById('test').value;
-    return false;
-}
-</script>
