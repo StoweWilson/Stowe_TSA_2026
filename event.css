@@ -16,7 +16,7 @@ body {
   min-height: 100vh;
 }
 
-/* SIDEBAR */
+
 .sidebar {
   background: #f3f3f3;
   border-right: 1px solid #dddddd;
@@ -76,7 +76,7 @@ body {
   height: 15px;
 }
 
-/* MAIN */
+
 .main {
   padding: 30px 38px;
 }
@@ -137,7 +137,7 @@ body {
   align-items: start;
 }
 
-/* EVENTS PANEL */
+
 .months-row {
   display: flex;
   gap: 22px;
@@ -244,7 +244,7 @@ body {
   min-height: 140px;
 }
 
-/* RIGHT PANEL */
+
 .right-panel {
   padding-top: 8px;
 }
