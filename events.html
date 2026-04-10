@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Events</title>
+</head>
+<nav class="navbar">
+<div class="navbar_inner">
+        <div class="navbar_left">
+        <a class="navbar_logo" href="./">
+           <img src="/Images/Boston_Commons_logo_design-removebg-preview.png" alt="Boston Commons logo">
+        </a>
+    </div>
+    <div class="nav_links" >
+        <div class="dropdown">
+            <button class="link_dropdown">Resources
+            <span class="chev">▾</span>
+            </button>
+
+            <div class="dropdown_menu">
+                <a class="link" href="/housing.html">Housing</a>
+                <a class="link" href="/healthcare.html">Healthcare</a>
+                <a class="link" href="/Nutandf.html">Nutrition & food</a>
+                <a class="link" href="https://docs.google.com/spreadsheets/d/1b5FhfnotcemgLK7dCAQRxkVwSd2-IhOX0XuyEbaYNf8/edit?usp=sharing">Sources</a>
+            </div>
+        </div>
+    </div>
+    <a class="link" href="/events.html">Events</a>
+<div class="search">
+    <form id="searchform" class="searchForm" autocomplete="off">
+        <input
+            class="searchInput"
+            id="test"
+            type="text"
+            name="search"
+            placeholder="Search Boston Commons"
+            maxlength="255"
+        />
+        <button type="submit" class="searchButton" aria-label="Search">
+            <img src="./Images/pngtree-vector-search-icon-png-image_320926-removebg-preview.png" alt="Search icon">
+        </button>
+    </form>
+
+    <div id="autocomplete-list" class="autocomplete-items"></div>
+</div>
+</div>
+</nav>
+<body>
+<div class="layout">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="search-box">
+        <input type="text" placeholder="Search Events..." id="searchInput" />
+        <span class="search-icon">⌕</span>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="section-title">
+          <span>CALENDARS</span>
+          <span>⌄</span>
+        </div>
+            <label class="check-row"><input type="checkbox" checked /> Family</label>
+            <label class="check-row"><input type="checkbox" checked /> Community</label>
+            <label class="check-row"><input type="checkbox" checked /> Market</label>
+            <label class="check-row"><input type="checkbox" checked /> Music</label>
+            <label class="check-row"><input type="checkbox" checked /> Food</label>
+            <label class="check-row"><input type="checkbox" checked /> Outdoors</label>
+        </div>
+
+      <div class="sidebar-section">
+        <div class="section-title">
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+      <div class="topbar">
+        <div class="page-title">
+          <h1>Events</h1>
+          <span class="download-icon">⇩</span>
+        </div>
+
+        
+
+      <div class="content-area">
+        <section class="events-panel">
+          <div class="months-row">
+            <button class="month-btn">Jan</button>
+            <button class="month-btn">Feb</button>
+            <button class="month-btn">Mar</button>
+            <button class="month-btn active">Apr</button>
+            <button class="month-btn">May</button>
+            <button class="month-btn">Jun</button>
+            <button class="month-btn">Jul</button>
+            <button class="month-btn">Aug</button>
+            <button class="month-btn">Sep</button>
+            <button class="month-btn">Oct</button>
+            <button class="month-btn">Nov</button>
+            <button class="month-btn">Dec</button>
+          </div>
+
+          <div id="eventsList" class="events-list"></div>
+        </section>
+
+        <aside class="right-panel">
+          <div class="right-toolbar">
+            
+          </div>
+
+          <div class="mini-calendar">
+            <div class="mini-header">
+              <span>‹</span>
+              <strong>April 2026</strong>
+              <span>›</span>
+            </div>
+
+            <div class="calendar-grid labels">
+              <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+            </div>
+
+            <div class="calendar-grid" id="miniCalendarDays"></div>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </div>
+
+  <script src="event.js"></script>
+</body>
+</html>
